@@ -1,0 +1,492 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;1,300;1,400&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fmr {
+  font-family: "Montserrat", sans-serif;
+}
+
+.frr {
+  font-family: "Rubik", sans-serif;
+}
+
+.max-h-500 {
+  max-height: 500px !important;
+}
+
+.text-orange {
+  color: rgb(253, 197, 92) !important;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+  padding: 25px 80px;
+  background: #fff;
+  position: relative;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.nav-wrapper {
+  transition: all 0.2s ease;
+  position: fixed;
+  top: 0;
+  height: 94px;
+  width: 100%;
+  z-index: 10;
+}
+
+header.active .nav-wrapper {
+  background: #fff;
+  border-bottom: 1px solid #efefef;
+}
+
+header.active nav {
+  margin-top: 0;
+}
+
+.logo {
+  float: left;
+}
+
+.nav-div {
+  float: right;
+
+}
+
+.nav-div ul li {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.nav-div ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #666 !important;
+  font-size: 13px;
+}
+
+.toggle-btn {
+  width: 42px;
+  position: absolute;
+  right: 40px;
+  top: 26px;
+  display: none;
+}
+
+.toggle-btn span {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #666;
+  float: left;
+  margin-bottom: 4px;
+}
+
+.buttons {
+  display: inline;
+}
+
+.button1 {
+  border-radius: 29px;
+  width: 86px;
+  height: 36px;
+  background: #555555;
+  border: none;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button2 {
+  border-radius: 29px;
+  width: 86px;
+  height: 36px;
+  background: orange;
+  border: none;
+  color: #171717;
+}
+
+.buttons .button2 a {
+  color: #0a0a0a;
+}
+
+@media (min-width: 991px) and (max-width: 1040px) {
+  #nav {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 991px) {
+  .logo.for-md {
+    display: none;
+  }
+
+  header ul li a.active {
+    position: relative;
+  }
+
+  header ul li a.active:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    bottom: -34px;
+    right: 0px;
+    width: 100%;
+    height: 3px;
+    background: #3498db;
+  }
+}
+
+@media (max-width: 991px) {
+  section#home {
+    margin-top: 90px;
+  }
+
+  header.active nav {
+    margin-top: 90px;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+
+  nav ul li {
+    padding: 15px 0px;
+    width: 100%;
+  }
+
+  nav.show {
+    display: flex;
+    height: auto;
+    /* margin-top: 90px; */
+    margin-top: 90px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2% 8% 5% 8%;
+    position: fixed;
+    top: 0;
+  }
+
+  nav.show .logo {
+    padding: 16px;
+  }
+
+  #nav .logo {
+    display: none;
+  }
+}
+
+/* make appointment section */
+.section-appointment {
+  position: relative;
+}
+
+.section-appointment:before {
+  position: absolute;
+  content: "";
+  background-image: url(img/doctors/appointment.jpg);
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-size: cover;
+}
+
+/* our-services section */
+.section-our-services,
+.affiliated-hospitals,
+.accepted-insurance,
+.clinical-interests,
+.lang-spoken {
+  position: relative;
+}
+
+.affiliated-hospitals:before,
+.clinical-interests:before {
+  position: absolute;
+  content: "";
+  /* background-image: url(img/home/our-services.jpg); */
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-size: cover;
+}
+
+.affiliated-hospitals:before {
+  background-image: url(img/IMAGE_4.jpg);
+
+}
+
+.clinical-interests:before {
+  background-image: url(img/IMAGE_7.jpg);
+
+}
+
+.section-our-services:before,
+.accepted-insurance:before,
+.lang-spoken:before {
+  position: absolute;
+  content: "";
+  /* background-image: url(img/home/our-services.jpg); */
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.section-our-services:before {
+  background-image: url(img/IMAGE.jpg);
+}
+
+.accepted-insurance:before {
+  background-image: url(img/IMAGE_2.jpg);
+
+}
+
+.lang-spoken:before {
+  background-image: url(img/IMAGE_3.jpg);
+
+}
+
+.slider-for-departments {
+  position: relative;
+}
+
+.slider-for-departments .slick-dots li button {
+  background-color: #3498db;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
+}
+
+.slider-for-departments .slick-dots {
+  bottom: -50px;
+}
+
+.slider-for-doctors .slick-dots li button {
+  background-color: #3498db;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
+}
+
+.slider-for-doctors .slick-dots {
+  bottom: -50px;
+}
+
+.slider-for-testimonial .slick-next-icon {
+  position: absolute;
+  right: 345px;
+  top: 70px;
+  z-index: 3;
+}
+
+.slider-for-testimonial .slick-prev-icon {
+  position: absolute;
+  left: 345px;
+  top: 70px;
+  z-index: 3;
+}
+
+.slider-for-testimonial .slick-dots {
+  bottom: -50px;
+}
+
+.slider-for-testimonial .slick-dots li button {
+  background-color: #fff;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.slider-nav-for-news-thumbnails {
+  padding: 12px;
+}
+
+.slider-nav-for-news-thumbnails .slick-slide.slick-current.slick-active>img {
+  border: 1px solid grey;
+  box-shadow: 2px 2px 10px grey;
+}
+
+
+@media (max-width: 1024px) {
+
+  .section-appointment:before,
+  .section-our-services:before,
+  .affiliated-hospitals:before,
+  .accepted-insurance:before,
+  .clinical-interests:before,
+  .lang-spoken:before {
+    position: relative;
+  }
+}
+
+@media (max-width: 991px) {
+  header .nav-wrapper {
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .nav-wrapper .logo {
+    margin-left: 10%;
+  }
+
+  header .nav-wrapper .logo img {
+    padding: 0;
+  }
+
+  .banner-content-div {
+    padding-top: 5% !important;
+  }
+
+  .max-h-500 {
+    max-height: 1070px !important;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 991px) {
+  #home img {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 640px) {
+  .toggle-btn {
+    right: 30px;
+  }
+}
+
+@media (max-width: 610px) {
+  .banner-img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .section-our-services .sm-box,
+  .affiliated-hospitals .sm-box,
+  .accepted-insurance .sm-box,
+  .clinical-interests .sm-box,
+  .lang-spoken .sm-box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1075px) {
+  .nav-div {
+    position: absolute;
+    margin-left: 107px;
+
+  }
+}
+
+@media (max-width: 1075px) {
+
+  .nav-div ul li {
+    padding-left: 5px;
+
+  }
+
+}
+
+@media (max-width: 760px) {
+  .banner-content-div-h1 {
+    font-size: 25px !important;
+    line-height: 30px !important;
+
+
+
+  }
+
+
+}
+
+@media (max-width: 552px) {
+  .banner-content-div-h1 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+    line-height: 24px !important;
+  }
+
+  .num-heading {
+    font-size: 17px !important;
+  }
+
+  .banner-content-div-p {
+    font-size: 14px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .banner-content-div-p {
+    font-size: 12px !important;
+  }
+
+  banner-content-div-button {
+    padding-bottom: 25px
+  }
+}
+
+@media (max-width: 417px) {
+  .banner-content-div {
+    padding-top: 10px !important;
+  }
+
+  .banner-content-div-h1 {
+    font-size: 16px !important;
+    line-height: 16px !important;
+  }
+
+  .banner-content-div-p {
+    font-size: 12px !important;
+    line-height: 14px !important;
+
+  }
+
+  banner-content-div-button {
+    line-height: 5px !important;
+
+  }
+}
